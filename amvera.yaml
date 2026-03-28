@@ -1,12 +1,9 @@
-version: 1
-
 meta:
-  toolchain: nodejs
+  environment: node
+  toolchain:
+    name: browser
+    version: 18
 
 build:
-  commands:
-    - npm install
-    - npm run build
-
-run:
-  command: npx serve -s dist
+  artifacts:
+    "dist/*": /
