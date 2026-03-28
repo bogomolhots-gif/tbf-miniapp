@@ -1,5 +1,9 @@
 version: "1"
 
+meta:
+  environment: node
+  toolchain: nodejs
+
 build:
   commands:
     - npm install
