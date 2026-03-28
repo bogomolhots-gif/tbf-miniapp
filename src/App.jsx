@@ -988,6 +988,14 @@ function FlavorPage({ item, onHome, onBack, inBar, isFavorite, onToggleBar, onTo
 }
 
 export default function App() {
+  useEffect(() => {
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+    }
+  }, []);
+
   const [page, setPage] = useState("home");
   const [selectedFlavor, setSelectedFlavor] = useState(null);
   const [history, setHistory] = useState([]);
