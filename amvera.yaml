@@ -1,9 +1,5 @@
-meta:
-  environment: node
-  toolchain:
-    name: browser
-    version: 22
-
 build:
-  artifacts:
-    "dist/*": /
+  dockerfile: Dockerfile
+
+run:
+  containerPort: 80
