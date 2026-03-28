@@ -1,4 +1,4 @@
-version: "1"
+version: 1
 
 meta:
   toolchain: nodejs
@@ -9,4 +9,4 @@ build:
     - npm run build
 
 run:
-  command: npx serve -s dist -l 80
+  command: npx serve -s dist
