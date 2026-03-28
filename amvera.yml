@@ -1,0 +1,9 @@
+version: "1"
+
+build:
+  commands:
+    - npm install
+    - npm run build
+
+run:
+  command: npx serve -s dist -l 80
